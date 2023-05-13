@@ -24,6 +24,7 @@ import 'package:ghmcofficerslogin/res/constants/providers/provider_notifiers.dar
 import 'package:ghmcofficerslogin/res/constants/routes/app_routes.dart';
 import 'package:ghmcofficerslogin/res/constants/text_constants/text_constants.dart';
 import 'package:ghmcofficerslogin/utils/base64.dart';
+import 'package:ghmcofficerslogin/utils/device_id.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 
@@ -39,7 +40,7 @@ class _RaiseRequest_RaiseRequestState extends State<RaiseRequest_RaiseRequest> {
   String? currentAddress;
   Position? _currentPosition;
   bool isDismissible = true;
-
+  String? deviceId;
   Future<bool> _handleLocationPermission() async {
     bool serviceEnabled;
     LocationPermission permission;
@@ -889,6 +890,7 @@ class _RaiseRequest_RaiseRequestState extends State<RaiseRequest_RaiseRequest> {
     Future.delayed(const Duration(seconds: 1), () async {
       EasyLoading.show();
       await _getCurrentPosition();
+      deviceId = await generateDeviceId();
       if (await InternetCheck()) {
         await raiserequestgetDemographics();
         raiserequestGetVehicleType();
@@ -1126,7 +1128,7 @@ class _RaiseRequest_RaiseRequestState extends State<RaiseRequest_RaiseRequest> {
     final requestPayload = {
       "CIRCLE_ID": raiseRequestDemographicsResponse?.cIRCLEID,
       "CREATED_BY": empname,
-      "DEVICEID": "5ed6cd80c2bf361b",
+      "DEVICEID": deviceId,
       "EST_WT": estimatedWasteController.text,
       "IMAGE1_PATH": base64_img1,
       "IMAGE2_PATH": "",

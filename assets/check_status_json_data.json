@@ -1,0 +1,56 @@
+{
+    "status": "success",
+    "message": "Data is available",
+    "viewGrievances": [
+        {
+            "flag": "success",
+            "id": "91222557235",
+            "type": "Garbage Burning",
+            "timestamp": "09-DEC-2022 15:33:47",
+            "status": "Open",
+            "category": "Health and Sanitation ",
+            "assignedto": "Nagaraju,SS/SI(9701362879)",
+            "status_ID": "2"
+        },
+        {
+            "flag": "success",
+            "id": "91222557234",
+            "type": "Repairs to Foot Path",
+            "timestamp": "09-DEC-2022 15:30:40",
+            "status": "Open",
+            "category": "Engineering",
+            "assignedto": "Sri K. Krishnavani,AE/ENG(7995007418)",
+            "status_ID": "2"
+        },
+        {
+            "flag": "success",
+            "id": "71222557210",
+            "type": "Repairs to Foot Path",
+            "timestamp": "07-DEC-2022 14:57:35",
+            "status": "Open",
+            "category": "Engineering",
+            "assignedto": "Sri K. Krishnavani,AE/ENG(7995007418)",
+            "status_ID": "2"
+        },
+        {
+            "flag": "success",
+            "id": "241122557064",
+            "type": "Repairs to Foot Path",
+            "timestamp": "24-NOV-2022 18:58:39",
+            "status": "Open",
+            "category": "Engineering",
+            "assignedto": "Ch.Sunil ,AE/ENG(7331170683)",
+            "status_ID": "2"
+        },
+        {
+            "flag": "success",
+            "id": "221122557019",
+            "type": "Repairs to Road (Pot holes)",
+            "timestamp": "22-NOV-2022 12:05:39",
+            "status": "Open",
+            "category": "Engineering",
+            "assignedto": "Ch.Sunil ,AE/ENG(7331170683)",
+            "status_ID": "2"
+        }
+    ]
+}
